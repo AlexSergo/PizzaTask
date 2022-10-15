@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_marginTop="1dp">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ветчина и грибы"
+        android:fontFamily="@font/robotobold"
+        android:textColor="@color/heading"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/image"
+        android:fontFamily="@font/sfuidisplaymedium"
+        android:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус"
+        android:textSize="14sp" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@id/title"
+            android:layout_alignParentRight="true"
+            android:id="@+id/priceButton"
+            android:background="@drawable/button_rect"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textColor="@color/base"
+            android:fontFamily="@font/sfuidisplaymedium"
+
+            android:textSize="14sp"
+            android:text="500"
+            />
+</RelativeLayout>
